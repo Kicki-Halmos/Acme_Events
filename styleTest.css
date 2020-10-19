@@ -52,3 +52,10 @@ li {
 body {
     background-color: #5E5C5E;
 }
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #78968F;
+    color: #EDEFE9;
+  }
