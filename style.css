@@ -1,0 +1,41 @@
+body {
+  background-color: #5e5c5e;
+  font-family: "Varela Round";
+}
+
+#navbar {
+  background-color: #232325;
+  height: 60px;
+  padding: 10px;
+  margin: -8px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  padding-top: 0px;
+  margin-top: -15px;
+}
+
+#navbarlinks {
+  padding-top: 20px;
+  padding-left: 100px;
+  word-spacing: 100px;
+  right: 100px;
+  position: fixed;
+}
+
+#navbarlinks a {
+  color: #edefe9;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#navbarlinks a:hover {
+  color: #74d14c;
+}
