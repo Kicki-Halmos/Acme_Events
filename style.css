@@ -1,0 +1,47 @@
+
+.flex-container{
+    background-color: black;
+    width: 100%;
+    height: 10% px;
+    margin-top: 0 px;
+    position: fixed;
+    margin: collapse;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+
+img {
+    width: 8%;
+}
+
+.logga{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+
+h3 {
+    margin-left: 40px;
+    margin-right: 20px;
+    color: white;
+    font-size: medium;
+    font-family: 'Varela Round', sans-serif;
+ }
+
+ .h3 {
+     align-self: flex-end;
+ }
+
+
+ 
+
+
+body{
+    background-color:#5e5c5e;
+    margin: 0;
+}
