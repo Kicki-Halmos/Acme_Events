@@ -10,7 +10,6 @@ body {
   margin: -8px;
   position: fixed;
   width: 100%;
-  z-index: 1;
 }
 
 #navbar img {
@@ -19,13 +18,14 @@ body {
   margin-right: auto;
   height: 90px;
   padding-top: 0px;
+  padding-right: 10px;
   margin-top: -15px;
 }
 
 #navbarlinks {
   padding-top: 20px;
-  padding-left: 100px;
-  word-spacing: 100px;
+  padding-left: 10px;
+  word-spacing: 40px;
   right: 100px;
   position: fixed;
 }
