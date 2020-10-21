@@ -39,3 +39,21 @@ body {
 #navbarlinks a:hover {
   color: #74d14c;
 }
+
+#backdrop{
+  background-color: #EDEFE9;
+  height: 300px;
+  width: 500px;
+  text-align: center;
+  display: grid;
+  margin: auto;
+  position: relative;
+  top:20px;
+  padding-top: 10px;
+  
+}
+
+.backdrop_line{
+  border-bottom: 3px solid #78968F;
+  
+}
