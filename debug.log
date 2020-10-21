@@ -1,0 +1,4 @@
+[1019/220250.829:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det g�r inte att hitta s�kv�gen. (0x3)
+[1019/223608.725:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det g�r inte att hitta s�kv�gen. (0x3)
+[1020/131739.419:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det g�r inte att hitta s�kv�gen. (0x3)
+[1021/225039.765:ERROR:directory_reader_win.cc(43)] FindFirstFile: Det g�r inte att hitta s�kv�gen. (0x3)
