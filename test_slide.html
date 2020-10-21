@@ -9,32 +9,40 @@
 </head>
 
 <body>
+
+    <!-----------behållare för slides---------->
     <div class="slideContainer">
-        <div class="Slide">
+        
+        <!-----------bild och text för varje slide--------->
+        <div class="slide">
             <img src="artist_img/AmasonPress2020.jpeg" />
             <div class="text" id="text_1"></div>
         </div>
-        <div class="Slide">
+        <div class="slide">
             <img src="artist_img/bennett.jpeg" />
             <div class="text" id="text_2"></div>
         </div>
-        <div class="Slide">
+        <div class="slide">
             <img src="artist_img/Cherrie2FotoElleJonsson.jpg" />
             <div class="text" id="text_3"></div>
         </div>
-        <div class="Slide">
+        <div class="slide">
             <img src="artist_img/el_perro.jpeg" />
             <div class="text" id="text_4"></div>
         </div>
+
+        <!-----------pilar för att trycka fram och tillbaka---------->
         <a class="prevBtn">❮</a>
         <a class="nextBtn">❯</a>
     </div>
     <br />
-    <div style="text-align:center">
-        <span class="Navdot" onclick="currentSlide(1)"></span>
-        <span class="Navdot" onclick="currentSlide(2)"></span>
-        <span class="Navdot" onclick="currentSlide(3)"></span>
-        <span class="Navdot" onclick="currentSlide(3)"></span>
+
+    <!-----------prickar som visar vilken slide vi är på---------->
+    <div class="dots">
+        <span class="navdot"></span>
+        <span class="navdot"></span>
+        <span class="navdot"></span>
+        <span class="navdot"></span>
     </div>
 
     <script src="main.js"></script>
