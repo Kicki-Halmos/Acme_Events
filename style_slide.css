@@ -1,38 +1,26 @@
-body {
-    background-color: #5E5C5E;
-}
-
 
 
 
 .slideContainer img {
+
     vertical-align: middle;
-    max-width: 550px;
-    max-height: 400px;
+    max-width: 515px;
+    max-height: 350px;
     margin: auto;
     text-align: center;
 }
 
 .slideContainer {
+    top: 100px;
     box-sizing: border-box;
-    max-width: 550px;
-    height: 600px;
+    max-width: 515px;
+    height: 550px;
     position: relative;
     margin: auto;
     background-color: #EDEFE9;
     text-align: center; 
+    z-index: 0;
 }
-
-.slide{ 
-    opacity: 0.8;
-    transition: all 0.5s ease-in-out;
-}
-
-.active{
-    opacity: 1;
-}
-
-
 
 .prevBtn,
 .nextBtn {
@@ -67,9 +55,11 @@ body {
 }
 
 .navdot { 
+    position: relative;
     height: 15px;
     width: 15px;
     margin: 0 2px;
+    top: 100px;
     background-color:#74D14C;
     border-radius: 50%;
     display: inline-block;
