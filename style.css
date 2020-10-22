@@ -42,7 +42,7 @@ body {
 
 #backdrop{
   background-color: #EDEFE9;
-  height: 300px;
+  
   width: 500px;
   text-align: center;
   display: grid;
@@ -50,10 +50,11 @@ body {
   position: relative;
   top:20px;
   padding-top: 10px;
-  
+  grid-template-rows: 33%, 33%, 33%;
 }
 
 .backdrop_line{
   border-bottom: 3px solid #78968F;
   
 }
+
