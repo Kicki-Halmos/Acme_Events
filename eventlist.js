@@ -144,12 +144,12 @@ class EventList {
         for (let item of list){
         let div_box1 = document.createElement("div");
         div_box1.setAttribute("class", "box1");
-        let h1 = document.createElement("h1");
-        h1.innerHTML = item.date + " "  + item.artist + " " + item.venue + " " + item.genre + " ";
-        let span_backdrop_line = document.createElement("span");
-        span_backdrop_line.setAttribute("class", "backdrop_line");
+        let P = document.createElement("p");
+        P.innerHTML = item.date + " "  + item.artist + " " + item.venue + " " + item.genre + " ";
+   /*      let span_backdrop_line = document.createElement("span");
+        span_backdrop_line.setAttribute("class", "backdrop_line"); */
         div.appendChild(div_box1);
-        div_box1.appendChild(h1);
+        div_box1.appendChild(P);
         }
 
     }
