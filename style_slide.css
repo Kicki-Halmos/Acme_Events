@@ -1,0 +1,85 @@
+
+
+
+.slideContainer img {
+
+    vertical-align: middle;
+    max-width: 515px;
+    max-height: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.slideContainer {
+    top: 100px;
+    box-sizing: border-box;
+    max-width: 515px;
+    height: 550px;
+    position: relative;
+    margin: auto;
+    background-color: #EDEFE9;
+    text-align: center; 
+    z-index: 0;
+}
+
+.prevBtn,
+.nextBtn {
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 10px;
+    background-color:#74D14C;
+    color:black;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.nextBtn {
+    cursor: pointer;
+    right: 0;
+}
+
+.prevBtn{
+    cursor: pointer;
+    left: 0;
+}
+
+.text {
+    color: black;
+    font-family: "Varela Round";
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.navdot { 
+    position: relative;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    top: 100px;
+    background-color:#74D14C;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+div.dots{
+    text-align:center;
+}
+
+.selected
+{
+    background-color: #78968F;
+}
+
+/*@media only screen and (max-width: 450px) {
+
+    .prevBtn,
+    .nextBtn,
+    .Caption {
+        font-size: 16px;
+    }
+}*/
