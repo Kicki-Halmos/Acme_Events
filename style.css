@@ -44,19 +44,24 @@ body {
 
 #backdrop{
   background-color: #EDEFE9;
-  
+  top:80px;
   width: 500px;
   text-align: center;
   display: grid;
   margin: auto;
   position: relative;
-  top:20px;
-  padding-top: 10px;
-  grid-template-rows: 33%, 33%, 33%;
+  margin-bottom: 20px;
 }
 
-.backdrop_line{
-  border-bottom: 3px solid #78968F;
-  
+.box1{
+  border-bottom: 2px solid #78968F;
 }
 
+#filtrera{
+  position:relative;
+  width:100px;
+  left:374px;
+  top:75px;
+  margin: auto;
+  display: inline;
+}
