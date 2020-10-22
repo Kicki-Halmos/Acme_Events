@@ -41,3 +41,27 @@ body {
 #navbarlinks a:hover {
   color: #74d14c;
 }
+
+#backdrop{
+  background-color: #EDEFE9;
+  top:80px;
+  width: 500px;
+  text-align: center;
+  display: grid;
+  margin: auto;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.box1{
+  border-bottom: 2px solid #78968F;
+}
+
+#filtrera{
+  position:relative;
+  width:100px;
+  left:374px;
+  top:75px;
+  margin: auto;
+  display: inline;
+}
