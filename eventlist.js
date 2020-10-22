@@ -143,7 +143,7 @@ class EventList {
 
         }
 
-        updateEvents() {
+        printEvents() {
 
         }
     }
