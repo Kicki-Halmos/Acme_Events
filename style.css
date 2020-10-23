@@ -71,7 +71,7 @@ body {
 
 
 #backdrop {
-
+  top: 100px;
   background-color: #EDEFE9;
   width: 500px;
   text-align: center;
@@ -86,10 +86,11 @@ body {
 }
 
 #filtrera{
+  
   position:relative;
   width:100px;
   left:374px;
-  top:75px;
+  top:90px;
   margin: auto;
   display: inline;
 }
