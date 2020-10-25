@@ -8,4 +8,5 @@ document.querySelector(".prevBtn").addEventListener("click", function() {  //vid
  document.querySelector(".nextBtn").addEventListener("click", function () { //vid klick pil framåt
     slide_show.changeSlides(1);                                             //anropar funktionen changeSlides och ger den 1 som inparameter
  }); 
+
 });
