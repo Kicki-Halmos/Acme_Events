@@ -152,3 +152,7 @@ a {
   text-align: center;
   margin-top: 20px;
 }
+
+#admin_form {
+  padding-top: 100px;
+}
