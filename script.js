@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const date = document.getElementById("date").value;
         const artist_bio = document.getElementById("artist_bio").value;
         const genre = document.getElementById("genre").value;
-        const link = document.getElementById("id").value;
+        const link = document.getElementById("link").value;
         const event = new Event(artist, venue, date, genre, link, artist_bio);
 
 
