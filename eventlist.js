@@ -71,18 +71,18 @@ class EventList {
       let p = document.createElement("p");
       p.innerHTML =
         item.date +
-        " - " +
+        " | " +
         item.artist +
-        " - " +
+        " | " +
         item.venue +
-        " - " +
+        " | " +
         item.genre +
-        " ";
+        " | ";
       div.appendChild(div_box1);
       div_box1.appendChild(p);
       var temp_link = document.createElement("a");
       temp_link.href = "detail.html";
-      temp_link.innerHTML = "mer info";
+      temp_link.innerHTML = "Mer info";
       p.appendChild(temp_link);
     }
   }
