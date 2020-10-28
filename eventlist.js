@@ -1,81 +1,7 @@
 class EventList {
   constructor() {
-    this.eventList = [
-      {
-        //array med utvalda events som ska visas på förstasidan
-        date: "Nov 18 2020",
-        artist: "Amason",
-        venue: "Mosebacke",
-        link: "blablabla",
-        genre: "Rock",
-      },
-      {
-        date: "Dec 20 2020",
-        artist: "Bennett",
-        venue: "Debaser",
-        link: "blablabla",
-        genre: "Hip-hop",
-      },
-      {
-        date: "Jan 5 2021",
-        artist: "Cherrie",
-        venue: "Under Bron",
-        link: "blablabla",
-        genre: "Soul",
-      },
-      {
-        date: "Feb 20 2021",
-        artist: "El Perro Del Mar",
-        venue: "Dramaten",
-        link: "blablabla",
-        genre: "Pop",
-      },
-      {
-        date: "Nov 12 2020",
-        artist: "Sibille Attar",
-        venue: "Mosebacke",
-        link: "blablabla",
-        genre: "Pop",
-      },
-
-      {
-        date: "Mar 1 2021",
-        artist: "Fever Ray",
-        venue: "Under Bron",
-        link: "blablabla",
-        genre: "Pop",
-      },
-
-      {
-        date: "Dec 15 2020",
-        artist: "Daddy Yankee",
-        venue: "Mosebacke",
-        link: "blablabla",
-        genre: "Soul",
-      },
-
-      {
-        date: "Mar 8 2021",
-        artist: "Silvana Imam",
-        venue: "Dramaten",
-        link: "blablabla",
-        genre: "Hip-hop",
-      },
-      {
-        date: "Apr 2 2021",
-        artist: "Kriget",
-        venue: "Södra Teatern",
-        link: "blablabla",
-        genre: "Rock",
-      },
-      {
-        date: "Dec 31 2020",
-        artist: "Veronica Maggio",
-        venue: "Dramaten",
-        link: "blablabla",
-        genre: "Pop",
-      },
-    ];
+    this.eventList = Store.getEvents();
+    console.log(this.eventList);
     this.printEvents(this.eventList);
   }
 
@@ -145,3 +71,80 @@ class EventList {
     }
   }
 }
+
+/*[
+  {
+    //array med utvalda events som ska visas på förstasidan
+    date: "Nov 18 2020",
+    artist: "Amason",
+    venue: "Mosebacke",
+    link: "blablabla",
+    genre: "Rock",
+  },
+  {
+    date: "Dec 20 2020",
+    artist: "Bennett",
+    venue: "Debaser",
+    link: "blablabla",
+    genre: "Hip-hop",
+  },
+  {
+    date: "Jan 5 2021",
+    artist: "Cherrie",
+    venue: "Under Bron",
+    link: "blablabla",
+    genre: "Soul",
+  },
+  {
+    date: "Feb 20 2021",
+    artist: "El Perro Del Mar",
+    venue: "Dramaten",
+    link: "blablabla",
+    genre: "Pop",
+  },
+  {
+    date: "Nov 12 2020",
+    artist: "Sibille Attar",
+    venue: "Mosebacke",
+    link: "blablabla",
+    genre: "Pop",
+  },
+
+  {
+    date: "Mar 1 2021",
+    artist: "Fever Ray",
+    venue: "Under Bron",
+    link: "blablabla",
+    genre: "Pop",
+  },
+
+  {
+    date: "Dec 15 2020",
+    artist: "Daddy Yankee",
+    venue: "Mosebacke",
+    link: "blablabla",
+    genre: "Soul",
+  },
+
+  {
+    date: "Mar 8 2021",
+    artist: "Silvana Imam",
+    venue: "Dramaten",
+    link: "blablabla",
+    genre: "Hip-hop",
+  },
+  {
+    date: "Apr 2 2021",
+    artist: "Kriget",
+    venue: "Södra Teatern",
+    link: "blablabla",
+    genre: "Rock",
+  },
+  {
+    date: "Dec 31 2020",
+    artist: "Veronica Maggio",
+    venue: "Dramaten",
+    link: "blablabla",
+    genre: "Pop",
+  },
+];*/

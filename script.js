@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submit = document.getElementById("submit");
 
-    let store = new Store();
-    
+    //let store = new Store();
+    Store.printEvents(Store.getEvents());
     submit.addEventListener("click", function (e) {
         e.preventDefault();
         const artist = document.getElementById("artist").value;
@@ -15,19 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
         const event = new Event(artist, venue, date, artist_bio);
         //addEvents(event);
 
-        
-        
-
-
-
-        store.addEvents(event);
-
-        
-        
-       
-        
+        Store.addEvents(event);
+        Store.printEvents(Store.getEvents());
         
     });
+
+    document.addEventListener("click", function(e){
+       if (e.target.classList.contains("delete")){
+            let remove =e.target.parentElement.parentElement.innerHTML;
+            console.log(remove);
+       }
+    })
 
     /*function getEvents()
         {
