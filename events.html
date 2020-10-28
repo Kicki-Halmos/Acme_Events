@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Events</title>
+    <link rel="shortcut icon" href="AcmeImage/Tabimage.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
     <div id="navbar">
       <div id="navbarlinks">
         <a href="events.html">Events</a>
-        <a href="about.html">About</a>
         <a href="home.html">Home</a>
+        <a href="about.html">About</a>
         <a href="admin.html">Admin</a>
       </div>
-      <img src="AcmeImage/image.png" alt="" />
-      
-      </div>
+      <a href="home.html">
+        <img src="AcmeImage/image.png" alt="" />
+      </a>
+    </div>
 
     <div id="filtrera">
       <select id="sort">
@@ -31,19 +32,21 @@
         <option value="date">Datum</option>
         <option value="genre">Kategori</option>
       </select>
-      
+
       <select id="filter">
-      <option value="" disabled selected>Filtrera kategori </option>
-      <option value="Rock">Rock</option>
-      <option value="Hip-hop">Hip-hop</option>
-      <option value="Soul">Soul</option>
-      <option value="Pop">Pop</option>
+        <option value="" disabled selected>Filtrera kategori</option>
+        <option value="Rock">Rock</option>
+        <option value="Hip-hop">Hip-hop</option>
+        <option value="Soul">Soul</option>
+        <option value="Pop">Pop</option>
       </select>
     </div>
   
     <div id="backdrop"></div>
-    
+
     <script src="main_events.js"></script>
     <script src="eventlist.js"></script>
+    <script src="store.js"></script>
+  
   </body>
 </html>
