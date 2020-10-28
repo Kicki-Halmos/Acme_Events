@@ -56,7 +56,7 @@ class Store {
     let id = 0;
     for (let item of list) {
       let p = document.createElement("p");
-      p.innerHTML = item.artist + "-" + item.date + "-" + item.venue + "-" + item.genre + "-" + item.link + "-" + item.artist_bio;
+      p.innerHTML = item.artist + " | " + item.date + " | " + item.venue + " | " + item.genre + " | " + item.link + " | " + item.artist_bio + " ";
       let span = document.createElement("span");
       let button_remove = document.createElement("button");
       button_remove.setAttribute("id", id);
