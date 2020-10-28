@@ -155,3 +155,7 @@ a {
 #admin_form {
   padding-top: 100px;
 }
+
+.hide{
+  display: none;
+}
