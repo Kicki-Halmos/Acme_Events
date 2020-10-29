@@ -6,10 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //let store = new Store();
     Store.printEvents(Store.getEvents());
     submit.addEventListener("click", function (e) {
-        e.preventDefault();
+        
+        
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
-        const date = document.getElementById("date").value;
+        const date_order = document.getElementById("date").value;
+        const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
         const artist_bio = document.getElementById("artist_bio").value;
         const genre = document.getElementById("genre").value;
         const link = document.getElementById("link").value
@@ -27,32 +29,37 @@ document.addEventListener("DOMContentLoaded", function () {
     let submit_edit = document.getElementById("submit_edit");
     let index;
     adminEvents.addEventListener("click", function (e) {
-        let p = e.target;
-        if (p.classList.contains("delete")) {
-            p.parentElement.remove();
-            let index = e.target.id;
-            Store.deleteEvents(index);
-            console.log(index);
-        } else {
+        if (e.target.tagName === "BUTTON") {
+            let p = e.target;
+            if (p.classList.contains("delete")) {
+                p.parentElement.remove();
+                let index = e.target.id;
+                Store.deleteEvents(index);
+                console.log(index);
+            } 
+            else {
 
-            index = e.target.id.substring(5);
-            console.log(index);
-            submit_edit.classList.remove("hide");
-            submit.classList.add("hide");
-            const artist = document.getElementById("artist");
-            const venue = document.getElementById("venue");
-            const date = document.getElementById("date");
-            const genre = document.getElementById("genre");
-            const link = document.getElementById("link");
-            const artist_bio = document.getElementById("artist_bio");
-            let list = Store.getEvents();
-            artist.value = list[index].artist;
-            venue.value = list[index].venue;
-            date.value = list[index].date;
-            artist_bio.value = list[index].artist_bio;
-            genre.value = list[index].genre;
-            link.value = list[index].link;
+                index = e.target.id.substring(5);
+                console.log(index);
+                submit_edit.classList.remove("hide");
+                submit.classList.add("hide");
+                const artist = document.getElementById("artist");
+                const venue = document.getElementById("venue");
+                const date_order = document.getElementById("date").value;
+                const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
+                const genre = document.getElementById("genre");
+                const link = document.getElementById("link");
+                const artist_bio = document.getElementById("artist_bio");
+                let list = Store.getEvents();
+                artist.value = list[index].artist;
+                venue.value = list[index].venue;
+                date.value = list[index].date;
+                artist_bio.value = list[index].artist_bio;
+                genre.value = list[index].genre;
+                link.value = list[index].link;
 
+
+            }
 
         }
 
@@ -64,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
-        const date = document.getElementById("date").value;
+        const date_order = document.getElementById("date").value;
+        const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
         const artist_bio = document.getElementById("artist_bio").value;
         const genre = document.getElementById("genre").value;
         const link = document.getElementById("link").value;
