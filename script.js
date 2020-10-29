@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let inputs = document.getElementsByClassName("input");
         for (let item of inputs) {
             if (item.value == "") {
-                alert("Fyll i fält!");
+                alert("Please fill out all the fields!");
                 return;
             }
         }
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 submit.classList.add("hide");
                 const artist = document.getElementById("artist");
                 const venue = document.getElementById("venue");
-                const date = document.getElementById("date").value;
+                const date = document.getElementById("date");
                 const genre = document.getElementById("genre");
                 const link = document.getElementById("link");
                 const artist_bio = document.getElementById("artist_bio");
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let inputs = document.getElementsByClassName("input");
         for (let item of inputs) {
             if (item.value == "") {
-                alert("Fyll i fält!");
+                alert("Please fill out all the fields!");
                 return;
             }
         }
