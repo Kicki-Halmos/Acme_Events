@@ -6,8 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     //let store = new Store();
     Store.printEvents(Store.getEvents());
     submit.addEventListener("click", function (e) {
-        
-        
+        let inputs = document.getElementsByClassName("input");
+        for (let item of inputs) {
+            if (item.value == "") {
+                alert("Fyll i fält!");
+                return;
+            }
+        }
+
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
         const date_order = document.getElementById("date").value;
@@ -36,8 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 let index = e.target.id;
                 Store.deleteEvents(index);
                 console.log(index);
-            } 
-            else {
+            } else {
 
                 index = e.target.id.substring(5);
                 console.log(index);
@@ -68,7 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     submit_edit.addEventListener("click", function (e) {
-        e.preventDefault();
+        let inputs = document.getElementsByClassName("input");
+        for (let item of inputs) {
+            if (item.value == "") {
+                alert("Fyll i fält!");
+                return;
+            }
+        }
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
         const date_order = document.getElementById("date").value;
