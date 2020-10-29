@@ -17,28 +17,28 @@ class Slide_show {
                 date: "18 november 2020",
                 artist: "Amason",
                 venue: "Mosebacke",
-                link: "blablabla"
+                
 
             },
             {
                 date: "20 december 2020",
                 artist: "Bennett",
                 venue: "Debaser",
-                link: "blablabla"
+                
 
             },
             {
                 date: "5 january 2021",
                 artist: "Cherrie",
                 venue: "Under Bron",
-                link: "blablabla"
+                
 
             },
             {
                 date: "20 februari 2021",
                 artist: "El Perro Del Mar",
                 venue: "Dramaten",
-                link: "blablabla"
+                
 
             }
 
@@ -89,9 +89,7 @@ class Slide_show {
         let venue =document.createElement("p");
         venue.innerHTML=this.slide[i -1].venue;
         text.appendChild(venue);
-        let link = document.createElement("p");
-        link.innerHTML=this.slide[i -1].link;
-        text.appendChild(link);
+        
 
     }
 }
