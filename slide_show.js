@@ -35,7 +35,7 @@ class Slide_show {
 
             },
             {
-                date: "20 februari 2021",
+                date: "20 february 2021",
                 artist: "El Perro Del Mar",
                 venue: "Dramaten",
                 

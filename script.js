@@ -16,8 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
-        const date_order = document.getElementById("date").value;
-        const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
+        const date = document.getElementById("date").value;
         const artist_bio = document.getElementById("artist_bio").value;
         const genre = document.getElementById("genre").value;
         const link = document.getElementById("link").value
@@ -50,8 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 submit.classList.add("hide");
                 const artist = document.getElementById("artist");
                 const venue = document.getElementById("venue");
-                const date_order = document.getElementById("date").value;
-                const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
+                const date = document.getElementById("date").value;
                 const genre = document.getElementById("genre");
                 const link = document.getElementById("link");
                 const artist_bio = document.getElementById("artist_bio");
@@ -82,8 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         const artist = document.getElementById("artist").value;
         const venue = document.getElementById("venue").value;
-        const date_order = document.getElementById("date").value;
-        const date = date_order.substring(8) + "-" + date_order.substring(5, 7) + "-" + date_order.substring(0, 4);
+        const date = document.getElementById("date").value;
         const artist_bio = document.getElementById("artist_bio").value;
         const genre = document.getElementById("genre").value;
         const link = document.getElementById("link").value;

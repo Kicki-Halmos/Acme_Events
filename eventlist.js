@@ -82,7 +82,7 @@ class EventList {
       div_box1.appendChild(p);
       var temp_link = document.createElement("a");
       temp_link.href = "detail.html";
-      temp_link.innerHTML = "Mer info";
+      temp_link.innerHTML = "More info";
       p.appendChild(temp_link);
     }
   }
