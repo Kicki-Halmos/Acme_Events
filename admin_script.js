@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submit = document.getElementById("submit");
 
-    //let store = new Store();
-    Store.printEvents(Store.getEvents());
+
+    Store.printEvents(Store.getEvents());  //skriver ut events från local storage på adminsidan
     submit.addEventListener("click", function (e) {
-        let inputs = document.getElementsByClassName("input");
+        let inputs = document.getElementsByClassName("input");  //säkerställer att alla fällt är ifyllda
         for (let item of inputs) {
             if (item.value == "") {
                 alert("Please fill out all the fields!");
@@ -22,20 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const link = document.getElementById("link").value
 
         const event = new Event(artist, venue, date, genre, link, artist_bio);
-        //addEvents(event);
 
-        Store.addEvents(event);
 
-        Store.printEvents(Store.getEvents());
-        Store.emptyInputs();
+        Store.addEvents(event); //lägger till nytt event i local storage
+
+        Store.printEvents(Store.getEvents());  
+        Store.emptyInputs();       
 
     });
     let adminEvents = document.getElementById("adminEvents");
     let submit_edit = document.getElementById("submit_edit");
     let index;
     adminEvents.addEventListener("click", function (e) {
-        if (e.target.tagName === "BUTTON") {
-            let p = e.target;
+        if (e.target.tagName === "BUTTON") {                    //radera event i local storage
+            let p = e.target;       
             if (p.classList.contains("delete")) {
                 p.parentElement.remove();
                 let index = e.target.id;
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log(index);
             } else {
 
-                index = e.target.id.substring(5);
+                index = e.target.id.substring(5);           //uppdatera event i local storage
                 console.log(index);
                 submit_edit.classList.remove("hide");
                 submit.classList.add("hide");
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     submit_edit.addEventListener("click", function (e) {
-        let inputs = document.getElementsByClassName("input");
+        let inputs = document.getElementsByClassName("input");   //uppdatera event i local storage
         for (let item of inputs) {
             if (item.value == "") {
                 alert("Please fill out all the fields!");
@@ -96,29 +96,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-
-
-
-
-
-
-    /*function getEvents()
-        {
-            let events;
-            if (localStorage.getItem("events")===null){
-                events = [];
-            }
-            else {
-                events = JSON.parse(localStorage.getItem("events"));
-            }
-
-            return events;
-        }
-
-        function addEvents(event){
-            let events = getEvents();
-            events.push(event);
-
-            localStorage.setItem("events", JSON.stringify(events));
-        }*/
 });

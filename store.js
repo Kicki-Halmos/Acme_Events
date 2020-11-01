@@ -1,5 +1,5 @@
 class Store {
-  static getEvents() {
+  static getEvents() { //funktion för att hämta events från local storage
     let events;
 
     if (localStorage.getItem("events") === null) {
@@ -11,7 +11,7 @@ class Store {
     return events;
   }
 
-  static addEvents(event) {
+  static addEvents(event) { //funktion för att lägga till events från local storage
     const events = Store.getEvents();
     //console.log(events);
     events.push(event);
@@ -21,10 +21,10 @@ class Store {
     //this.printEvents(Store.getEvents());
   }
 
-  static deleteEvents(index) {
+  static deleteEvents(index) { //funktion för att radera events från local storage
     const events = Store.getEvents();
-    
-    events.splice(index,1);
+
+    events.splice(index, 1);
     //console.log(events);
 
     localStorage.setItem("events", JSON.stringify(events));
@@ -32,16 +32,16 @@ class Store {
   }
   static updateEvents(index, event) {
     const events = Store.getEvents();
-    
-    events.splice(index,1, event);
+
+    events.splice(index, 1, event);
     //console.log(events);
 
     localStorage.setItem("events", JSON.stringify(events));
 
   }
-  static emptyInputs(){
+  static emptyInputs() { //funktion för att tömma inputs på adminsidan
     document.getElementById("artist").value = "";
-    document.getElementById("date").value ="";
+    document.getElementById("date").value = "";
     document.getElementById("venue").value = "";
     document.getElementById("artist_bio").value = "";
     document.getElementById("genre").value = "";
@@ -49,8 +49,8 @@ class Store {
 
 
   }
- 
-  static printEvents(list) {
+
+  static printEvents(list) { //funktion för att skriva ut events från local storage på adminsidan
     let div = document.getElementById("adminEvents");
     div.innerHTML = "";
     let id = 0;
@@ -63,8 +63,8 @@ class Store {
       button_remove.setAttribute("class", "delete");
       button_remove.innerHTML = "remove";
       let button_edit = document.createElement("button");
-      button_edit.setAttribute("id", "edit_"+id);
-      button_edit.innerHTML="edit";
+      button_edit.setAttribute("id", "edit_" + id);
+      button_edit.innerHTML = "edit";
       div.appendChild(span);
       span.appendChild(p);
       p.appendChild(button_remove);

@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Admin</title>
-    <link rel="shortcut icon" href="AcmeImage/Tabimage.ico" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="style_slide.css" />
-  </head>
-  <body>
-    <div id="navbar">
-      <div id="navbarlinks">
-        <a href="home.html">Home</a>
-        <a href="events.html">Events</a>
-        <a href="about.html">About</a>
-        <a style="color: #74d14c" href="admin.html">Admin</a>
-      </div>
-      <a href="home.html">
-        <img src="AcmeImage/image.png" alt="" />
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Admin</title>
+  <link rel="shortcut icon" href="AcmeImage/Tabimage.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_slide.css" />
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="navbarlinks">
+      <a href="home.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="about.html">About</a>
+      <a style="color: #74d14c" href="admin.html">Admin</a>
     </div>
+    <a href="home.html">
+      <img src="AcmeImage/image.png" alt="" />
+    </a>
+  </div>
 
-    <div id="admin">
-      <form id="admin_form">
-          <tr>
-          <label for="artist">Artist</label>
-          <br>
-          <input type="text" id="artist" class="input">
+  <div id="admin">
+    <form id="admin_form">
+      <tr>
+        <label for="artist">Artist</label>
+        <br>
+        <input type="text" id="artist" class="input">
       </tr>
       <br>
       <br>
-          <label for="venue">Venue</label>
-          <br>
-          <input type="text" id="venue" class="input">
+      <label for="venue">Venue</label>
+      <br>
+      <input type="text" id="venue" class="input">
       </tr>
       <br>
       <br>
       <tr>
-     
-          <label for="date" >Date</label>
-          <br>
-          <input type="text" id="date" class="input" placeholder="Jan 01 2021">
+
+        <label for="date">Date</label>
+        <br>
+        <input type="text" id="date" class="input" placeholder="Jan 01 2021">
       </tr>
       <br>
       <br>
       <tr>
-     
+
         <label for="genre">Genre</label>
         <br>
         <select id="genre" class="input">
@@ -61,37 +60,38 @@
           <option value="Soul">Soul</option>
           <option value="Pop">Pop</option>
         </select>
-    </tr>
-    <br>
+      </tr>
+      <br>
       <br>
       <tr>
-     
-        <label for="link" >Link</label>
+
+        <label for="link">Link</label>
         <br>
         <input type="text" id="link" class="input">
-    </tr>
-    <br>
-    <br>
-      <tr>
-          <label for="artist_bio">Artist bio</label>
-          <br>
-          <textarea name="" id="artist_bio" class="input" cols="30" rows="10"></textarea>
       </tr>
       <br>
       <br>
-          <tr>
-          <button type="submit" id="submit">submit</button>
-          <button type="submit" id="submit_edit" class = "hide">submit-edit</button>
+      <tr>
+        <label for="artist_bio">Artist bio</label>
+        <br>
+        <textarea name="" id="artist_bio" class="input" cols="30" rows="10"></textarea>
+      </tr>
+      <br>
+      <br>
+      <tr>
+        <button type="submit" id="submit">submit</button>
+        <button type="submit" id="submit_edit" class="hide">submit-edit</button>
       </tr>
 
-      </form>
-    </div>
+    </form>
+  </div>
 
 
   <div id="adminEvents"></div>
 
-  <script src="script.js"></script>
+  <script src="admin_script.js"></script>
   <script src="event.js"></script>
   <script src="store.js"></script>
-  </body>
+</body>
+
 </html>

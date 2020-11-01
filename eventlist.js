@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   let eventlist = new EventList();
   let sortSelect = document.getElementById("sort");
-  //let events = Store.getEvents();
-  //console.log(events);
+ 
 
-  sortSelect.addEventListener("change", function () {
+  sortSelect.addEventListener("change", function () {  //eventlyssnare för sortera event
     eventlist.sortList();
   });
 
-  let filterSelect = document.getElementById("filter");
+  let filterSelect = document.getElementById("filter");  //eventlyssnare för filtrera event
   filterSelect.addEventListener("change", function () {
     eventlist.filterList();
   });
@@ -16,18 +15,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
 class EventList {
   constructor() {
-    this.eventList = Store.getEvents();
-    console.log(this.eventList);
-    this.printEvents(this.eventList);
+    this.eventList = Store.getEvents();  //lista för events
+    
+    this.printEvents(this.eventList);  //skriver ut listan på events-sidan
   }
 
   sortList() {
-    let select = document.getElementById("sort"); //selectruta för att välja hur många frågor (5-10)
-    for (let i = 0; i < select.options.length; i++) {
-      let opt = select.options[i];
-
-      if (opt.selected) {
-        if (opt.value === "date") {
+    let select = document.getElementById("sort");   //funktion för att sortera events
+     
+        if (select.value === "date") {
           this.eventList.sort(function (a, b) {
             return new Date(a.date) - new Date(b.date);
           });
@@ -39,29 +35,26 @@ class EventList {
 
           this.printEvents(this.eventList);
         }
-      }
+      
     }
-  }
+  
 
   filterList() {
-    let select = document.getElementById("filter"); //selectruta för att välja hur många frågor (5-10)
+    let select = document.getElementById("filter");  //funktion för att filtrera events
     let genreList;
-    for (let i = 0; i < select.options.length; i++) {
-      let opt = select.options[i];
-
-      if (opt.selected) {
+{
         genreList = this.eventList.filter((value) => {
-          if (value.genre === opt.value) {
+          if (value.genre === select.value) {
             return value;
           }
         });
       }
-    }
+    
 
     this.printEvents(genreList);
   }
 
-  printEvents(list) {
+  printEvents(list) {   //funktion som skriver ut events på events-sidan
     let div = document.getElementById("backdrop");
     div.innerHTML = "";
     console.log(list);
@@ -88,79 +81,3 @@ class EventList {
   }
 }
 
-/*[
-  {
-    //array med utvalda events som ska visas på förstasidan
-    date: "Nov 18 2020",
-    artist: "Amason",
-    venue: "Mosebacke",
-    link: "blablabla",
-    genre: "Rock",
-  },
-  {
-    date: "Dec 20 2020",
-    artist: "Bennett",
-    venue: "Debaser",
-    link: "blablabla",
-    genre: "Hip-hop",
-  },
-  {
-    date: "Jan 5 2021",
-    artist: "Cherrie",
-    venue: "Under Bron",
-    link: "blablabla",
-    genre: "Soul",
-  },
-  {
-    date: "Feb 20 2021",
-    artist: "El Perro Del Mar",
-    venue: "Dramaten",
-    link: "blablabla",
-    genre: "Pop",
-  },
-  {
-    date: "Nov 12 2020",
-    artist: "Sibille Attar",
-    venue: "Mosebacke",
-    link: "blablabla",
-    genre: "Pop",
-  },
-
-  {
-    date: "Mar 1 2021",
-    artist: "Fever Ray",
-    venue: "Under Bron",
-    link: "blablabla",
-    genre: "Pop",
-  },
-
-  {
-    date: "Dec 15 2020",
-    artist: "Daddy Yankee",
-    venue: "Mosebacke",
-    link: "blablabla",
-    genre: "Soul",
-  },
-
-  {
-    date: "Mar 8 2021",
-    artist: "Silvana Imam",
-    venue: "Dramaten",
-    link: "blablabla",
-    genre: "Hip-hop",
-  },
-  {
-    date: "Apr 2 2021",
-    artist: "Kriget",
-    venue: "Södra Teatern",
-    link: "blablabla",
-    genre: "Rock",
-  },
-  {
-    date: "Dec 31 2020",
-    artist: "Veronica Maggio",
-    venue: "Dramaten",
-    link: "blablabla",
-    genre: "Pop",
-  },
-];*/
